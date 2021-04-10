@@ -85,7 +85,7 @@ if __name__ == "__main__":
                         action='store_false',
                         help='Read posts without crossposting.')
     parser.set_defaults(crosspost=False)
-    parse.add_argument('--pauseafter',
+    parser.add_argument('--pauseafter',
                        dest='pauseafter',
                        required=False,
                        help='Number of stream requests yielding no new items before pause. Never pauses if not specified.')
@@ -96,3 +96,4 @@ if __name__ == "__main__":
         crosspost=args.crosspost,
         pause_after=args.pauseafter
     )
+
