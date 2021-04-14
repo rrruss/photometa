@@ -88,5 +88,3 @@ def handle_submission(submission: Submission, crosspost: bool, crosspost_to: str
         
     else:
         print("No location found\n")
-
-    return None

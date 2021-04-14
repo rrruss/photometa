@@ -58,8 +58,6 @@ def main(
             if posts_read >= limit:
                 break
 
-    return None
-
 
 
 if __name__ == "__main__":
