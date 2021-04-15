@@ -15,7 +15,7 @@ RUN pip3 install --upgrade pip && pip3 install --no-cache-dir -r requirements.tx
 RUN python3 -m spacy download en_core_web_trf
 
 
-COPY refresh_token.txt processing.py gmap.py /home/
+COPY praw.ini refresh_token.txt processing.py gmap.py /home/
 
 ENTRYPOINT ["python3", "-u", "gmap.py"]
 CMD ["--mode", "new"]

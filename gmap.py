@@ -19,6 +19,7 @@ def main(
         pause_after: int
     ) -> None:
     reddit = praw.Reddit(
+        site_name="locationbot",
         token_manager=FileTokenManager(REFRESH_TOKEN_FILENAME),
         user_agent="use_file_token_manager/v0 by u/bboe",
         check_for_async=False
