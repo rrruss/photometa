@@ -1,4 +1,16 @@
+# PRAW secrets
 praw.ini
 refresh_token.txt
 
 .ipynb_checkpoints/
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+*.terraform.lock.hcl
+
+# Mac OS X
+.DS_Store
